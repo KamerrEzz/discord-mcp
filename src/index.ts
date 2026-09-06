@@ -7,6 +7,7 @@ import { registerChannelAdminTools } from './tools/channelAdmin.js';
 import { registerChannelTools } from './tools/channel.js';
 import { registerGuildTools } from './tools/guild.js';
 import { registerMemberTools } from './tools/member.js';
+import { registerOnboardingTools } from './tools/onboarding.js';
 import { registerRoleAdminTools } from './tools/roleAdmin.js';
 import { registerRoleTools } from './tools/role.js';
 import type { ToolDeps } from './tools/helpers.js';
@@ -47,6 +48,7 @@ async function main(): Promise<void> {
   registerChannelAdminTools(server, deps);
   registerRoleTools(server, deps);
   registerRoleAdminTools(server, deps);
+  registerOnboardingTools(server, deps);
   registerMemberTools(server, deps);
   registerAnnounceTools(server, deps);
 
