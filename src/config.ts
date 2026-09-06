@@ -1,4 +1,9 @@
-import 'dotenv/config';
+import { config as loadEnv } from 'dotenv';
+import path from 'node:path';
+
+// Load .env from the project root, not process cwd: OpenCode spawns local MCP
+// servers from wherever the session runs, so cwd-relative loading would miss it.
+loadEnv({ path: path.join(__dirname, '..', '.env') });
 
 export interface Config {
   /** Discord bot token (DISCORD_TOKEN). Required. */
