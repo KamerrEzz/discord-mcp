@@ -43,10 +43,10 @@ const OnboardingOptionInput = z
     title: z.string().min(1).max(100).describe('Option title, 1-100 chars. Example: "Gaming".'),
     description: z
       .string()
-      .max(200)
+      .max(100)
       .nullable()
       .optional()
-      .describe('Option description, max 200 chars. Pass null to clear it.'),
+      .describe('Option description, max 100 chars (Discord API limit). Pass null to clear it.'),
     emoji: z
       .string()
       .min(1)
