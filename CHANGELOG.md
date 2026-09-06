@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-09-06
+
+### Fixed
+
+- Onboarding description validation: enforce the Discord API 100-character limit on option descriptions (longer ones were rejected with error 50035)
+
 ## [1.1.0] - 2026-09-06
 
 ### Added
@@ -18,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Environment loading: `.env` is now resolved from the project root instead of the process working directory, so the server starts from any directory
 
-[Unreleased]: https://github.com/KamerrEzz/discord-mcp/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/KamerrEzz/discord-mcp/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/KamerrEzz/discord-mcp/releases/tag/v1.1.1
 [1.1.0]: https://github.com/KamerrEzz/discord-mcp/releases/tag/v1.1.0
 [1.0.0]: https://github.com/KamerrEzz/discord-mcp/releases/tag/v1.0.0
